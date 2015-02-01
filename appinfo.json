@@ -1,0 +1,46 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Pinnacle Software",
+    "longName": "This is the weather app using JavaScript",
+    "projectType": "pebblejs",
+    "resources": {
+        "media": [
+            {
+                "file": "images/menu_icon.png",
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/logo_splash.png",
+                "name": "IMAGE_LOGO_SPLASH",
+                "type": "png"
+            },
+            {
+                "file": "images/tile_splash.png",
+                "name": "IMAGE_TILE_SPLASH",
+                "type": "png"
+            },
+            {
+                "file": "fonts/UbuntuMono-Regular.ttf",
+                "name": "MONO_FONT_14",
+                "type": "font"
+            },
+            {
+                "file": "images/SG.png",
+                "menuIcon": true,
+                "name": "IMAGES_SG_PNG",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "W_Forecast",
+    "uuid": "1f95dc33-9294-4e1d-8f87-95a6f980b2f4",
+    "versionCode": 1,
+    "versionLabel": "1.31",
+    "watchapp": {
+        "watchface": false
+    }
+}
