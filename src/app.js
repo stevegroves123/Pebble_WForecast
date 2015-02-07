@@ -2,6 +2,7 @@ var UI = require('ui');
 var ajax = require('ajax');
 var Vector2 = require('vector2');
 var about_window = new UI.Window();
+var Vibe = require('ui/vibe');
 var cityName = '';
 
 // Create a Card with title and subtitle
@@ -16,6 +17,8 @@ main_card.show();
 
 // Choose the location
 main_card.on('click','select',function(e) {
+  // Give feedback to user
+  Vibe.vibrate('short');
   var menu = new UI.Menu({
     sections:[{
     items:[{
@@ -38,6 +41,8 @@ about_window.hide();
 
 // Display the weather information
 menu.on('select',function(e) {
+  // Give feedback to user
+  Vibe.vibrate('short');
   cityName = e.item.title;
   var weather_card = new UI.Card();
   // Construct URL
