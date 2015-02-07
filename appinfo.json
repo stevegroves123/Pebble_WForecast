@@ -39,7 +39,7 @@
     "shortName": "W_Forecast",
     "uuid": "1f95dc33-9294-4e1d-8f87-95a6f980b2f4",
     "versionCode": 1,
-    "versionLabel": "1.32",
+    "versionLabel": "1.33",
     "watchapp": {
         "watchface": false
     }
