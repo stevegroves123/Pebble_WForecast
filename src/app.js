@@ -1,6 +1,7 @@
 var UI = require('ui');
 var ajax = require('ajax');
 var Vector2 = require('vector2');
+var about_window = new UI.Window();
 var cityName = '';
 
 // Create a Card with title and subtitle
@@ -33,6 +34,7 @@ main_card.on('click','select',function(e) {
   }]
   });
 menu.show();
+about_window.hide();
 
 // Display the weather information
 menu.on('select',function(e) {
@@ -59,7 +61,7 @@ menu.on('select',function(e) {
       var description = data.weather[0].description;
       description = description.charAt(0).toUpperCase() + description.substring(1);
       // Show data to user
-      weather_card.subtitle(location + "\nT:" + temperature + "C");
+      weather_card.subtitle(location + "\nT: " + temperature + "C");
       weather_card.body(description + "\nH:" + humidity + "%" + "\nWind: " + wind_speed + "mph");
       weather_card.show();
     },
@@ -74,16 +76,15 @@ menu.on('select',function(e) {
 });
 
 main_card.on('click', 'down', function(e) {
-  var about_window = new UI.Window();
   var text = new UI.Text({
     position: new Vector2(0, 0),
     size: new Vector2(144, 168),
     text:'Steve Groves \nFeb 2015 \n\nJavaScript app for Pebble',
     font: 'gothic_28_bold',
-    color:'black',
+    color:'white',
     textOverflow:'wrap',
     textAlign:'left',
-    backgroundColor:'white'
+    backgroundColor:'black'
   });
   about_window.add(text);
   about_window.show();
