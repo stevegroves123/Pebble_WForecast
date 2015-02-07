@@ -62,7 +62,7 @@ menu.on('select',function(e) {
       description = description.charAt(0).toUpperCase() + description.substring(1);
       // Show data to user
       weather_card.subtitle(location + "\nT: " + temperature + "C");
-      weather_card.body(description + "\nH:" + humidity + "%" + "\nWind: " + wind_speed + "mph");
+      weather_card.body(description + "\nH: " + humidity + "%" + "\nWind: " + wind_speed + "mph");
       weather_card.show();
     },
     function(error) 
