@@ -51,7 +51,8 @@ menu.on('select',function(e) {
   ajax(
     {
       url: URL,
-      type: 'json'
+      type: 'json',
+      cache: 'true'
     },
     function(data) 
     {
